@@ -1,0 +1,82 @@
+.landing__container {
+  max-width: 1240px;
+}
+
+.imageLogo {
+  max-width: 300px;
+}
+
+.videoLogo {
+  height: 380px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .videoLogo {
+    height: 430px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .videoLogo {
+    height: 290px;
+  }
+}
+
+.musicService {
+  height: 100vh;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.musicService::-webkit-scrollbar {
+  display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+  .musicService {
+    overflow-y: visible;
+    height: 100%;
+  }
+}
+
+.serviceIntegration button svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media only screen and (max-width: 640px) {
+  .serviceIntegration button svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.serviceIntegration__boxIcon {
+  width: 40px;
+  height: 40px;
+}
+
+@media only screen and (max-width: 640px) {
+  .serviceIntegration__boxIcon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media only screen and (max-width: 404px) {
+  .serviceIntegration .labelName {
+    font-size: 16px;
+  }
+}
+
+.musicProfile {
+  height: 100vh;
+}
+
+@media only screen and (max-width: 1023px) {
+  .musicProfile {
+    height: auto;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
