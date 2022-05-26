@@ -62,13 +62,13 @@
 <body>
     <main>
         <div class="landing__container mx-auto px-6">
-            <div class="bgImage fixed w-full h-screen top-0 left-0 right-0 bottom-0 z-0">
+            <div id="bgImage" class="bgImage fixed w-full h-screen top-0 left-0 right-0 bottom-0 z-0">
                 <picture>
                     <source srcset="https://scontent.fjog3-1.fna.fbcdn.net/v/t1.6435-9/121119203_2888593261242929_921018575298066967_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeHZ700GqvdZeKsY4Ol_du2qVoV3NmVTnnFWhXc2ZVOecY7_Zo0PmBlqvQ7wlPyhMqMR__XYodVW_WTg02JiBQfl&_nc_ohc=oJrlhRpzCkQAX9wZk6g&_nc_ht=scontent.fjog3-1.fna&oh=00_AT_nrEZYINQ_CDombDm5GcspLf87w98ffqu0eSsblsnKxQ&oe=62ADA895" media="(min-width: 1024px)">
                     <img class="hidden lg:block w-full h-full object-cover" src="" alt="MDN">
                 </picture>
             </div>
-            <div class="bgImage__mobile absolute top-0 left-0 right-0 z-10 block lg:hidden">
+            <div id="bgImage__mobile" class="bgImage__mobile absolute top-0 left-0 right-0 z-10 block lg:hidden">
                 <picture>
                     <source srcset="https://scontent.fjog3-1.fna.fbcdn.net/v/t1.6435-9/121119203_2888593261242929_921018575298066967_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeHZ700GqvdZeKsY4Ol_du2qVoV3NmVTnnFWhXc2ZVOecY7_Zo0PmBlqvQ7wlPyhMqMR__XYodVW_WTg02JiBQfl&_nc_ohc=oJrlhRpzCkQAX9wZk6g&_nc_ht=scontent.fjog3-1.fna&oh=00_AT_nrEZYINQ_CDombDm5GcspLf87w98ffqu0eSsblsnKxQ&oe=62ADA895" media="(max-width: 1024px)">
                     <img class="w-full h-full object-cover" src="" alt="MDN">
@@ -127,7 +127,7 @@
                         </div>
                     </div>
                     <div class="w-full lg:w-1/2 px-4">
-                        <div class="musicService pb-10 pt-16 md:pt-20 lg:pr-6">
+                        <div id="musicService" class="musicService pb-10 pt-16 md:pt-20 lg:pr-6">
                             <div class="mb-6">
                                 <div class="flex items-center justify-center lg:justify-start">
                                     <div class="mr-2">
@@ -140,166 +140,6 @@
                                 </div>
                             </div>
                             <ul class="serviceIntegration">
-                                <li class="mb-5">
-                                    <button class="w-full  px-4 sm:px-6 py-3 border border-gray-200" style="background-color: rgba(255, 255, 255, 0.8); border-radius: 10px;">
-                                        <div class="flex items-center w-full">
-                                            <div class="serviceIntegration__boxIcon flex items-center justify-center rounded-md" style="background-color: rgb(102, 0, 255);">
-                                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M12 0C5.4 0 0 5.4 0 12C0 18.6 5.4 24 12 24C18.6 24 24 18.6 24 12C24 5.4 18.6 0 12 0ZM16.731 18C16.511 18 16.401 17.89 16.181 17.78C14.531 16.789 12.441 16.24 10.241 16.24C9.031 16.24 7.711 16.46 6.611 16.68C6.391 16.68 6.171 16.79 6.061 16.79C5.621 16.79 5.291 16.46 5.291 16.02C5.291 15.58 5.511 15.25 5.951 15.25C7.381 14.92 8.812 14.7 10.352 14.7C12.882 14.7 15.192 15.36 17.172 16.46C17.392 16.68 17.612 16.79 17.612 17.23C17.39 17.78 17.06 18 16.731 18ZM17.94 14.921C17.72 14.921 17.5 14.811 17.28 14.701C15.41 13.491 12.769 12.831 9.91 12.831C8.48 12.831 7.159 13.051 6.17 13.271C5.95 13.381 5.84 13.381 5.62 13.381C5.07 13.381 4.739 12.941 4.739 12.5C4.739 11.95 4.959 11.73 5.509 11.509C6.829 11.179 8.15 10.849 10.02 10.849C13.1 10.849 15.96 11.619 18.381 13.049C18.711 13.269 18.931 13.599 18.931 13.93C18.82 14.48 18.491 14.921 17.94 14.921ZM19.37 11.4C19.15 11.4 19.04 11.29 18.71 11.18C16.51 9.97 13.32 9.2 10.24 9.2C8.7 9.2 7.05 9.42 5.619 9.75C5.399 9.75 5.289 9.86 4.959 9.86C4.299 9.971 3.859 9.42 3.859 8.761C3.859 8.102 4.189 7.77 4.629 7.661C6.39 7.22 8.26 7 10.24 7C13.65 7 17.17 7.77 19.921 9.2C20.251 9.42 20.581 9.75 20.581 10.3C20.471 10.96 20.03 11.4 19.37 11.4Z" fill="#fff"/>
-                                                </svg>
-                                            </div>
-                                            <div class="ml-3 sm:ml-4 flex justify-between items-center flex-1">
-                                                <span class="labelName text-lg font-bold" style="color: rgb(102, 0, 255);">Spotify</span>  
-                                                <div class="flex items-center justify-end">
-                                                    <span class="mr-2 text-sm font-bold text-left" style="color: rgb(102, 0, 255);">Play</span>
-                                                    <svg width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M5.8169 21L4 19.1266L12.3662 10.5L4 1.87344L5.8169 0L16 10.5L5.8169 21Z" fill="rgb(102, 0, 255)"/>
-                                                    </svg>   
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </button>
-                                </li>
-                                <li class="mb-5">
-                                    <button class="w-full  px-4 sm:px-6 py-3 border border-gray-200" style="background-color: rgba(255, 255, 255, 0.8); border-radius: 10px;">
-                                        <div class="flex items-center w-full">
-                                            <div class="serviceIntegration__boxIcon flex items-center justify-center rounded-md" style="background-color: rgb(102, 0, 255);">
-                                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M12 0C5.4 0 0 5.4 0 12C0 18.6 5.4 24 12 24C18.6 24 24 18.6 24 12C24 5.4 18.6 0 12 0ZM16.731 18C16.511 18 16.401 17.89 16.181 17.78C14.531 16.789 12.441 16.24 10.241 16.24C9.031 16.24 7.711 16.46 6.611 16.68C6.391 16.68 6.171 16.79 6.061 16.79C5.621 16.79 5.291 16.46 5.291 16.02C5.291 15.58 5.511 15.25 5.951 15.25C7.381 14.92 8.812 14.7 10.352 14.7C12.882 14.7 15.192 15.36 17.172 16.46C17.392 16.68 17.612 16.79 17.612 17.23C17.39 17.78 17.06 18 16.731 18ZM17.94 14.921C17.72 14.921 17.5 14.811 17.28 14.701C15.41 13.491 12.769 12.831 9.91 12.831C8.48 12.831 7.159 13.051 6.17 13.271C5.95 13.381 5.84 13.381 5.62 13.381C5.07 13.381 4.739 12.941 4.739 12.5C4.739 11.95 4.959 11.73 5.509 11.509C6.829 11.179 8.15 10.849 10.02 10.849C13.1 10.849 15.96 11.619 18.381 13.049C18.711 13.269 18.931 13.599 18.931 13.93C18.82 14.48 18.491 14.921 17.94 14.921ZM19.37 11.4C19.15 11.4 19.04 11.29 18.71 11.18C16.51 9.97 13.32 9.2 10.24 9.2C8.7 9.2 7.05 9.42 5.619 9.75C5.399 9.75 5.289 9.86 4.959 9.86C4.299 9.971 3.859 9.42 3.859 8.761C3.859 8.102 4.189 7.77 4.629 7.661C6.39 7.22 8.26 7 10.24 7C13.65 7 17.17 7.77 19.921 9.2C20.251 9.42 20.581 9.75 20.581 10.3C20.471 10.96 20.03 11.4 19.37 11.4Z" fill="#fff"/>
-                                                </svg>
-                                            </div>
-                                            <div class="ml-3 sm:ml-4 flex justify-between items-center flex-1">
-                                                <span class="labelName text-lg font-bold" style="color: rgb(102, 0, 255);">Spotify</span>  
-                                                <div class="flex items-center justify-end">
-                                                    <span class="mr-2 text-sm font-bold text-left" style="color: rgb(102, 0, 255);">Play</span>
-                                                    <svg width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M5.8169 21L4 19.1266L12.3662 10.5L4 1.87344L5.8169 0L16 10.5L5.8169 21Z" fill="rgb(102, 0, 255)"/>
-                                                    </svg>   
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </button>
-                                </li>
-                                <li class="mb-5">
-                                    <button class="w-full  px-4 sm:px-6 py-3 border border-gray-200" style="background-color: rgba(255, 255, 255, 0.8); border-radius: 10px;">
-                                        <div class="flex items-center w-full">
-                                            <div class="serviceIntegration__boxIcon flex items-center justify-center rounded-md" style="background-color: rgb(102, 0, 255);">
-                                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M12 0C5.4 0 0 5.4 0 12C0 18.6 5.4 24 12 24C18.6 24 24 18.6 24 12C24 5.4 18.6 0 12 0ZM16.731 18C16.511 18 16.401 17.89 16.181 17.78C14.531 16.789 12.441 16.24 10.241 16.24C9.031 16.24 7.711 16.46 6.611 16.68C6.391 16.68 6.171 16.79 6.061 16.79C5.621 16.79 5.291 16.46 5.291 16.02C5.291 15.58 5.511 15.25 5.951 15.25C7.381 14.92 8.812 14.7 10.352 14.7C12.882 14.7 15.192 15.36 17.172 16.46C17.392 16.68 17.612 16.79 17.612 17.23C17.39 17.78 17.06 18 16.731 18ZM17.94 14.921C17.72 14.921 17.5 14.811 17.28 14.701C15.41 13.491 12.769 12.831 9.91 12.831C8.48 12.831 7.159 13.051 6.17 13.271C5.95 13.381 5.84 13.381 5.62 13.381C5.07 13.381 4.739 12.941 4.739 12.5C4.739 11.95 4.959 11.73 5.509 11.509C6.829 11.179 8.15 10.849 10.02 10.849C13.1 10.849 15.96 11.619 18.381 13.049C18.711 13.269 18.931 13.599 18.931 13.93C18.82 14.48 18.491 14.921 17.94 14.921ZM19.37 11.4C19.15 11.4 19.04 11.29 18.71 11.18C16.51 9.97 13.32 9.2 10.24 9.2C8.7 9.2 7.05 9.42 5.619 9.75C5.399 9.75 5.289 9.86 4.959 9.86C4.299 9.971 3.859 9.42 3.859 8.761C3.859 8.102 4.189 7.77 4.629 7.661C6.39 7.22 8.26 7 10.24 7C13.65 7 17.17 7.77 19.921 9.2C20.251 9.42 20.581 9.75 20.581 10.3C20.471 10.96 20.03 11.4 19.37 11.4Z" fill="#fff"/>
-                                                </svg>
-                                            </div>
-                                            <div class="ml-3 sm:ml-4 flex justify-between items-center flex-1">
-                                                <span class="labelName text-lg font-bold" style="color: rgb(102, 0, 255);">Spotify</span>  
-                                                <div class="flex items-center justify-end">
-                                                    <span class="mr-2 text-sm font-bold text-left" style="color: rgb(102, 0, 255);">Play</span>
-                                                    <svg width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M5.8169 21L4 19.1266L12.3662 10.5L4 1.87344L5.8169 0L16 10.5L5.8169 21Z" fill="rgb(102, 0, 255)"/>
-                                                    </svg>   
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </button>
-                                </li>
-                                <li class="mb-5">
-                                    <button class="w-full  px-4 sm:px-6 py-3 border border-gray-200" style="background-color: rgba(255, 255, 255, 0.8); border-radius: 10px;">
-                                        <div class="flex items-center w-full">
-                                            <div class="serviceIntegration__boxIcon flex items-center justify-center rounded-md" style="background-color: rgb(102, 0, 255);">
-                                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M12 0C5.4 0 0 5.4 0 12C0 18.6 5.4 24 12 24C18.6 24 24 18.6 24 12C24 5.4 18.6 0 12 0ZM16.731 18C16.511 18 16.401 17.89 16.181 17.78C14.531 16.789 12.441 16.24 10.241 16.24C9.031 16.24 7.711 16.46 6.611 16.68C6.391 16.68 6.171 16.79 6.061 16.79C5.621 16.79 5.291 16.46 5.291 16.02C5.291 15.58 5.511 15.25 5.951 15.25C7.381 14.92 8.812 14.7 10.352 14.7C12.882 14.7 15.192 15.36 17.172 16.46C17.392 16.68 17.612 16.79 17.612 17.23C17.39 17.78 17.06 18 16.731 18ZM17.94 14.921C17.72 14.921 17.5 14.811 17.28 14.701C15.41 13.491 12.769 12.831 9.91 12.831C8.48 12.831 7.159 13.051 6.17 13.271C5.95 13.381 5.84 13.381 5.62 13.381C5.07 13.381 4.739 12.941 4.739 12.5C4.739 11.95 4.959 11.73 5.509 11.509C6.829 11.179 8.15 10.849 10.02 10.849C13.1 10.849 15.96 11.619 18.381 13.049C18.711 13.269 18.931 13.599 18.931 13.93C18.82 14.48 18.491 14.921 17.94 14.921ZM19.37 11.4C19.15 11.4 19.04 11.29 18.71 11.18C16.51 9.97 13.32 9.2 10.24 9.2C8.7 9.2 7.05 9.42 5.619 9.75C5.399 9.75 5.289 9.86 4.959 9.86C4.299 9.971 3.859 9.42 3.859 8.761C3.859 8.102 4.189 7.77 4.629 7.661C6.39 7.22 8.26 7 10.24 7C13.65 7 17.17 7.77 19.921 9.2C20.251 9.42 20.581 9.75 20.581 10.3C20.471 10.96 20.03 11.4 19.37 11.4Z" fill="#fff"/>
-                                                </svg>
-                                            </div>
-                                            <div class="ml-3 sm:ml-4 flex justify-between items-center flex-1">
-                                                <span class="labelName text-lg font-bold" style="color: rgb(102, 0, 255);">Spotify</span>  
-                                                <div class="flex items-center justify-end">
-                                                    <span class="mr-2 text-sm font-bold text-left" style="color: rgb(102, 0, 255);">Play</span>
-                                                    <svg width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M5.8169 21L4 19.1266L12.3662 10.5L4 1.87344L5.8169 0L16 10.5L5.8169 21Z" fill="rgb(102, 0, 255)"/>
-                                                    </svg>   
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </button>
-                                </li>
-                                <li class="mb-5">
-                                    <button class="w-full  px-4 sm:px-6 py-3 border border-gray-200" style="background-color: rgba(255, 255, 255, 0.8); border-radius: 10px;">
-                                        <div class="flex items-center w-full">
-                                            <div class="serviceIntegration__boxIcon flex items-center justify-center rounded-md" style="background-color: rgb(102, 0, 255);">
-                                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M12 0C5.4 0 0 5.4 0 12C0 18.6 5.4 24 12 24C18.6 24 24 18.6 24 12C24 5.4 18.6 0 12 0ZM16.731 18C16.511 18 16.401 17.89 16.181 17.78C14.531 16.789 12.441 16.24 10.241 16.24C9.031 16.24 7.711 16.46 6.611 16.68C6.391 16.68 6.171 16.79 6.061 16.79C5.621 16.79 5.291 16.46 5.291 16.02C5.291 15.58 5.511 15.25 5.951 15.25C7.381 14.92 8.812 14.7 10.352 14.7C12.882 14.7 15.192 15.36 17.172 16.46C17.392 16.68 17.612 16.79 17.612 17.23C17.39 17.78 17.06 18 16.731 18ZM17.94 14.921C17.72 14.921 17.5 14.811 17.28 14.701C15.41 13.491 12.769 12.831 9.91 12.831C8.48 12.831 7.159 13.051 6.17 13.271C5.95 13.381 5.84 13.381 5.62 13.381C5.07 13.381 4.739 12.941 4.739 12.5C4.739 11.95 4.959 11.73 5.509 11.509C6.829 11.179 8.15 10.849 10.02 10.849C13.1 10.849 15.96 11.619 18.381 13.049C18.711 13.269 18.931 13.599 18.931 13.93C18.82 14.48 18.491 14.921 17.94 14.921ZM19.37 11.4C19.15 11.4 19.04 11.29 18.71 11.18C16.51 9.97 13.32 9.2 10.24 9.2C8.7 9.2 7.05 9.42 5.619 9.75C5.399 9.75 5.289 9.86 4.959 9.86C4.299 9.971 3.859 9.42 3.859 8.761C3.859 8.102 4.189 7.77 4.629 7.661C6.39 7.22 8.26 7 10.24 7C13.65 7 17.17 7.77 19.921 9.2C20.251 9.42 20.581 9.75 20.581 10.3C20.471 10.96 20.03 11.4 19.37 11.4Z" fill="#fff"/>
-                                                </svg>
-                                            </div>
-                                            <div class="ml-3 sm:ml-4 flex justify-between items-center flex-1">
-                                                <span class="labelName text-lg font-bold" style="color: rgb(102, 0, 255);">Spotify</span>  
-                                                <div class="flex items-center justify-end">
-                                                    <span class="mr-2 text-sm font-bold text-left" style="color: rgb(102, 0, 255);">Play</span>
-                                                    <svg width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M5.8169 21L4 19.1266L12.3662 10.5L4 1.87344L5.8169 0L16 10.5L5.8169 21Z" fill="rgb(102, 0, 255)"/>
-                                                    </svg>   
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </button>
-                                </li>
-                                <li class="mb-5">
-                                    <button class="w-full  px-4 sm:px-6 py-3 border border-gray-200" style="background-color: rgba(255, 255, 255, 0.8); border-radius: 10px;">
-                                        <div class="flex items-center w-full">
-                                            <div class="serviceIntegration__boxIcon flex items-center justify-center rounded-md" style="background-color: rgb(102, 0, 255);">
-                                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M12 0C5.4 0 0 5.4 0 12C0 18.6 5.4 24 12 24C18.6 24 24 18.6 24 12C24 5.4 18.6 0 12 0ZM16.731 18C16.511 18 16.401 17.89 16.181 17.78C14.531 16.789 12.441 16.24 10.241 16.24C9.031 16.24 7.711 16.46 6.611 16.68C6.391 16.68 6.171 16.79 6.061 16.79C5.621 16.79 5.291 16.46 5.291 16.02C5.291 15.58 5.511 15.25 5.951 15.25C7.381 14.92 8.812 14.7 10.352 14.7C12.882 14.7 15.192 15.36 17.172 16.46C17.392 16.68 17.612 16.79 17.612 17.23C17.39 17.78 17.06 18 16.731 18ZM17.94 14.921C17.72 14.921 17.5 14.811 17.28 14.701C15.41 13.491 12.769 12.831 9.91 12.831C8.48 12.831 7.159 13.051 6.17 13.271C5.95 13.381 5.84 13.381 5.62 13.381C5.07 13.381 4.739 12.941 4.739 12.5C4.739 11.95 4.959 11.73 5.509 11.509C6.829 11.179 8.15 10.849 10.02 10.849C13.1 10.849 15.96 11.619 18.381 13.049C18.711 13.269 18.931 13.599 18.931 13.93C18.82 14.48 18.491 14.921 17.94 14.921ZM19.37 11.4C19.15 11.4 19.04 11.29 18.71 11.18C16.51 9.97 13.32 9.2 10.24 9.2C8.7 9.2 7.05 9.42 5.619 9.75C5.399 9.75 5.289 9.86 4.959 9.86C4.299 9.971 3.859 9.42 3.859 8.761C3.859 8.102 4.189 7.77 4.629 7.661C6.39 7.22 8.26 7 10.24 7C13.65 7 17.17 7.77 19.921 9.2C20.251 9.42 20.581 9.75 20.581 10.3C20.471 10.96 20.03 11.4 19.37 11.4Z" fill="#fff"/>
-                                                </svg>
-                                            </div>
-                                            <div class="ml-3 sm:ml-4 flex justify-between items-center flex-1">
-                                                <span class="labelName text-lg font-bold" style="color: rgb(102, 0, 255);">Spotify</span>  
-                                                <div class="flex items-center justify-end">
-                                                    <span class="mr-2 text-sm font-bold text-left" style="color: rgb(102, 0, 255);">Play</span>
-                                                    <svg width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M5.8169 21L4 19.1266L12.3662 10.5L4 1.87344L5.8169 0L16 10.5L5.8169 21Z" fill="rgb(102, 0, 255)"/>
-                                                    </svg>   
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </button>
-                                </li>
-                                <li class="mb-5">
-                                    <button class="w-full  px-4 sm:px-6 py-3 border border-gray-200" style="background-color: rgba(255, 255, 255, 0.8); border-radius: 10px;">
-                                        <div class="flex items-center w-full">
-                                            <div class="serviceIntegration__boxIcon flex items-center justify-center rounded-md" style="background-color: rgb(102, 0, 255);">
-                                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M12 0C5.4 0 0 5.4 0 12C0 18.6 5.4 24 12 24C18.6 24 24 18.6 24 12C24 5.4 18.6 0 12 0ZM16.731 18C16.511 18 16.401 17.89 16.181 17.78C14.531 16.789 12.441 16.24 10.241 16.24C9.031 16.24 7.711 16.46 6.611 16.68C6.391 16.68 6.171 16.79 6.061 16.79C5.621 16.79 5.291 16.46 5.291 16.02C5.291 15.58 5.511 15.25 5.951 15.25C7.381 14.92 8.812 14.7 10.352 14.7C12.882 14.7 15.192 15.36 17.172 16.46C17.392 16.68 17.612 16.79 17.612 17.23C17.39 17.78 17.06 18 16.731 18ZM17.94 14.921C17.72 14.921 17.5 14.811 17.28 14.701C15.41 13.491 12.769 12.831 9.91 12.831C8.48 12.831 7.159 13.051 6.17 13.271C5.95 13.381 5.84 13.381 5.62 13.381C5.07 13.381 4.739 12.941 4.739 12.5C4.739 11.95 4.959 11.73 5.509 11.509C6.829 11.179 8.15 10.849 10.02 10.849C13.1 10.849 15.96 11.619 18.381 13.049C18.711 13.269 18.931 13.599 18.931 13.93C18.82 14.48 18.491 14.921 17.94 14.921ZM19.37 11.4C19.15 11.4 19.04 11.29 18.71 11.18C16.51 9.97 13.32 9.2 10.24 9.2C8.7 9.2 7.05 9.42 5.619 9.75C5.399 9.75 5.289 9.86 4.959 9.86C4.299 9.971 3.859 9.42 3.859 8.761C3.859 8.102 4.189 7.77 4.629 7.661C6.39 7.22 8.26 7 10.24 7C13.65 7 17.17 7.77 19.921 9.2C20.251 9.42 20.581 9.75 20.581 10.3C20.471 10.96 20.03 11.4 19.37 11.4Z" fill="#fff"/>
-                                                </svg>
-                                            </div>
-                                            <div class="ml-3 sm:ml-4 flex justify-between items-center flex-1">
-                                                <span class="labelName text-lg font-bold" style="color: rgb(102, 0, 255);">Spotify</span>  
-                                                <div class="flex items-center justify-end">
-                                                    <span class="mr-2 text-sm font-bold text-left" style="color: rgb(102, 0, 255);">Play</span>
-                                                    <svg width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M5.8169 21L4 19.1266L12.3662 10.5L4 1.87344L5.8169 0L16 10.5L5.8169 21Z" fill="rgb(102, 0, 255)"/>
-                                                    </svg>   
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </button>
-                                </li>
-                                <li class="mb-5">
-                                    <button class="w-full  px-4 sm:px-6 py-3 border border-gray-200" style="background-color: rgba(255, 255, 255, 0.8); border-radius: 10px;">
-                                        <div class="flex items-center w-full">
-                                            <div class="serviceIntegration__boxIcon flex items-center justify-center rounded-md" style="background-color: rgb(102, 0, 255);">
-                                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M12 0C5.4 0 0 5.4 0 12C0 18.6 5.4 24 12 24C18.6 24 24 18.6 24 12C24 5.4 18.6 0 12 0ZM16.731 18C16.511 18 16.401 17.89 16.181 17.78C14.531 16.789 12.441 16.24 10.241 16.24C9.031 16.24 7.711 16.46 6.611 16.68C6.391 16.68 6.171 16.79 6.061 16.79C5.621 16.79 5.291 16.46 5.291 16.02C5.291 15.58 5.511 15.25 5.951 15.25C7.381 14.92 8.812 14.7 10.352 14.7C12.882 14.7 15.192 15.36 17.172 16.46C17.392 16.68 17.612 16.79 17.612 17.23C17.39 17.78 17.06 18 16.731 18ZM17.94 14.921C17.72 14.921 17.5 14.811 17.28 14.701C15.41 13.491 12.769 12.831 9.91 12.831C8.48 12.831 7.159 13.051 6.17 13.271C5.95 13.381 5.84 13.381 5.62 13.381C5.07 13.381 4.739 12.941 4.739 12.5C4.739 11.95 4.959 11.73 5.509 11.509C6.829 11.179 8.15 10.849 10.02 10.849C13.1 10.849 15.96 11.619 18.381 13.049C18.711 13.269 18.931 13.599 18.931 13.93C18.82 14.48 18.491 14.921 17.94 14.921ZM19.37 11.4C19.15 11.4 19.04 11.29 18.71 11.18C16.51 9.97 13.32 9.2 10.24 9.2C8.7 9.2 7.05 9.42 5.619 9.75C5.399 9.75 5.289 9.86 4.959 9.86C4.299 9.971 3.859 9.42 3.859 8.761C3.859 8.102 4.189 7.77 4.629 7.661C6.39 7.22 8.26 7 10.24 7C13.65 7 17.17 7.77 19.921 9.2C20.251 9.42 20.581 9.75 20.581 10.3C20.471 10.96 20.03 11.4 19.37 11.4Z" fill="#fff"/>
-                                                </svg>
-                                            </div>
-                                            <div class="ml-3 sm:ml-4 flex justify-between items-center flex-1">
-                                                <span class="labelName text-lg font-bold" style="color: rgb(102, 0, 255);">Spotify</span>  
-                                                <div class="flex items-center justify-end">
-                                                    <span class="mr-2 text-sm font-bold text-left" style="color: rgb(102, 0, 255);">Play</span>
-                                                    <svg width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M5.8169 21L4 19.1266L12.3662 10.5L4 1.87344L5.8169 0L16 10.5L5.8169 21Z" fill="rgb(102, 0, 255)"/>
-                                                    </svg>   
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </button>
-                                </li>
                                 <li class="mb-5">
                                     <button class="w-full  px-4 sm:px-6 py-3 border border-gray-200" style="background-color: rgba(255, 255, 255, 0.8); border-radius: 10px;">
                                         <div class="flex items-center w-full">
