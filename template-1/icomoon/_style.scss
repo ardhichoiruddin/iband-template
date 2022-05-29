@@ -1,0 +1,170 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?qplp7i');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?qplp7i#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?qplp7i') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?qplp7i') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?qplp7i##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-audiomack {
+  &:before {
+    content: $icon-audiomack; 
+  }
+}
+.icon-call {
+  &:before {
+    content: $icon-call; 
+  }
+}
+.icon-amazon {
+  &:before {
+    content: $icon-amazon; 
+  }
+}
+.icon-deezer {
+  &:before {
+    content: $icon-deezer; 
+  }
+}
+.icon-link {
+  &:before {
+    content: $icon-link; 
+  }
+}
+.icon-facebook {
+  &:before {
+    content: $icon-facebook; 
+  }
+}
+.icon-instagram {
+  &:before {
+    content: $icon-instagram; 
+  }
+}
+.icon-tone {
+  &:before {
+    content: $icon-tone; 
+  }
+}
+.icon-apple-music {
+  &:before {
+    content: $icon-apple-music; 
+  }
+}
+.icon-napster {
+  &:before {
+    content: $icon-napster; 
+  }
+}
+.icon-pandora {
+  &:before {
+    content: $icon-pandora; 
+  }
+}
+.icon-patreon {
+  &:before {
+    content: $icon-patreon; 
+  }
+}
+.icon-paypal {
+  &:before {
+    content: $icon-paypal; 
+  }
+}
+.icon-shazam {
+  &:before {
+    content: $icon-shazam; 
+  }
+}
+.icon-snapchat {
+  &:before {
+    content: $icon-snapchat; 
+  }
+}
+.icon-soundcloud {
+  &:before {
+    content: $icon-soundcloud; 
+  }
+}
+.icon-spotify {
+  &:before {
+    content: $icon-spotify; 
+  }
+}
+.icon-tidal {
+  &:before {
+    content: $icon-tidal; 
+  }
+}
+.icon-tiktok {
+  &:before {
+    content: $icon-tiktok; 
+  }
+}
+.icon-twitter {
+  &:before {
+    content: $icon-twitter; 
+  }
+}
+.icon-vk {
+  &:before {
+    content: $icon-vk; 
+  }
+}
+.icon-youtube-music {
+  &:before {
+    content: $icon-youtube-music; 
+  }
+}
+.icon-youtube {
+  &:before {
+    content: $icon-youtube; 
+  }
+}
+.icon-itunes {
+  &:before {
+    content: $icon-itunes; 
+  }
+}
+.icon-joox {
+  &:before {
+    content: $icon-joox; 
+  }
+}
+.icon-play {
+  &:before {
+    content: $icon-play; 
+  }
+}
+.icon-resso {
+  &:before {
+    content: $icon-resso; 
+  }
+}
+.icon-whatsapp {
+  &:before {
+    content: $icon-whatsapp; 
+  }
+}
+

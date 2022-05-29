@@ -1,4 +1,6 @@
 
+@import './icomoon/style';
+  
 .landing{
     &__container{
         max-width: 1240px;
@@ -108,5 +110,17 @@
 
     @media only screen and (max-width: 1023px) {
         height: auto;
+    }
+}
+
+.socialMedia{
+
+    button{
+        width: 33px;
+        height: 33px;
+    }
+
+    [class^="icon-"]{
+        font-size: 28px;
     }
 }
